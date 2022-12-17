@@ -1,0 +1,9 @@
+#shopping-list li {
+    cursor:pointer;
+    
+}
+
+#shopping-list li:hover{
+    background-color: black;
+    color:white;
+}

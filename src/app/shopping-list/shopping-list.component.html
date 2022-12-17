@@ -1,7 +1,19 @@
 <div class="row">
-    <div class="col-md-12">
-        <app-shopping-list-edit></app-shopping-list-edit>
-        <hr>
-        <p> modified shopping list</p>
+  <div class="col-md-12">
+    <app-shopping-list-edit></app-shopping-list-edit>
+    <hr />
+    <div id="shopping-list">
+      <ul class="list-group">
+        <li
+          *ngFor="let ingredient of ingredients"
+          class="list-group-item"
+          (click)="onShoppingItemClicked(ingredient.name)"
+        >
+          {{ ingredient.name }}-({{ ingredient.amount }})
+        </li>
+      </ul>
     </div>
+
+     
+  </div>
 </div>

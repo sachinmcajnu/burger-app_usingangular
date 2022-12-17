@@ -1,0 +1,13 @@
+#recipe-list img{
+    width: 100%;
+    height: 100%;
+}
+
+#recipe-list a{
+   color: #333;
+}
+
+#recipe-list a:hover{
+    background: #000;
+    color:#fff;
+}
