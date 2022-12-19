@@ -15,6 +15,7 @@ export class RecipeComponent implements OnInit {
   }
 
   onItemClicked(recipe:Recipe){
+    console.log("clicked recipe "+recipe.name);
     this.recipe = recipe;
   }
 }

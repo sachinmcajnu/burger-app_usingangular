@@ -8,6 +8,7 @@
             type="text"
             placeholder="Enter new name"
             class="form-control"
+            #name
           />
         </div>
 
@@ -16,12 +17,13 @@
             type="number"
             placeholder="Enter new amount"
             class="form-control"
+            #amount
           />
         </div>
       </div>
       <div class="row card-footer">
         <div class="form-group">
-          <button class="btn btn-success">Save</button>
+          <button class="btn btn-success" (click)="onSaveClicked()">Save</button>
           <button class="btn btn-danger ml-3">Delete</button>
           <button class="btn btn-warning ml-3">Clear</button>
         </div>

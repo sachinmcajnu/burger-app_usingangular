@@ -22,8 +22,8 @@ export class RecipeListComponent implements OnInit {
 
  @Output() recipeEmitter = new EventEmitter();
 
-  onItemClicked(recipe){
-    console.log("recipe-list "+recipe.target.value);
+ onRecipeItemClicked(recipe){
+    console.log("recipe-list "+recipe);
     this.recipeEmitter.emit(recipe);
   }
 }
