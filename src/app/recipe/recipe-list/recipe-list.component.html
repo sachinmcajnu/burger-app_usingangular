@@ -7,21 +7,8 @@
 <section id="recipe-list">
   <div class="row">
     <div class="col-md-12">
-      <a href="#" class="list-group-item" *ngFor="let recipe of recipes">
-        <div class="d-flex">
-          <div class="col-md-10 pl-2 text-center">
-            <div class="d-flex flex-column">
-              <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-              <p class="list-group-item-text">{{ recipe.description }}</p>
-            </div>
-          </div>
-          <div class="col-md-2 p-0">
-            <img class="img-fluid" src="{{ recipe.imagePath }}" alt="" />
-          </div>
-        </div>
-      </a>
-
-      <app-recipe-item></app-recipe-item>
+      
+      <app-recipe-item *ngFor="let recipe of recipes" [recipe] = "recipe" (click)="onItemClicked($event)"></app-recipe-item>
     </div>
   </div>
 </section>
